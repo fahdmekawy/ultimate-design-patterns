@@ -9,19 +9,19 @@ class MediatorUserModel {
   }
 
   void reciveDirectMessage(String message, MediatorUserModel user) {
-    print('User ${user.name} recived message: $message');
+    print('User ${user.name} received message: $message');
   }
 
   void sendMessageeGroup(String message, String groupName) {
-    print('User ${name} send message: $message to group ${groupName}');
-    // groupModel.reciveMessage(message, this);
+    print('User $name send message: $message to group $groupName');
+    // groupModel.receiveMessage(message, this);
     chatMediator.sendGroupMessage(message, groupName, this);
   }
 
   void reciveMessageeGroup(
       String message, String groupName, MediatorUserModel user) {
     print(
-        ' in group ${groupName} User ${name} recived message: $message from user ${user.name}');
+        ' in group $groupName User $name received message: $message from user ${user.name}');
     chatMediator.sendGroupMessage(message, groupName, this);
   }
 }

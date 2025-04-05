@@ -2,7 +2,7 @@ import 'package:dart_lang/b_behavioral/b_strategy/a_naive_solution/a_naive_solut
 
 void main() {
   const Product product1 = Product(name: "Mobile", price: 1000);
-  const Product product2 = Product(name: "Labtop", price: 10000);
+  const Product product2 = Product(name: "Laptop", price: 10000);
   const Product product3 = Product(name: "PC", price: 5000);
 
   double price1 = product1.calculatePrice(MembershipType.regular);

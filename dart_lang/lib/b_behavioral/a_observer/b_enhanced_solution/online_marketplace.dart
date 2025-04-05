@@ -1,9 +1,9 @@
 import 'package:dart_lang/b_behavioral/a_observer/b_enhanced_solution/observer.dart';
 
 class OnlineMarketPlace {
-  Map<EventType, List<Subscriber>> _subscribers;
-  List<Product> _products;
-  List<Offer> _offers;
+  final Map<EventType, List<Subscriber>> _subscribers;
+  final List<Product> _products;
+  final List<Offer> _offers;
 
   OnlineMarketPlace()
       : _subscribers = {},
@@ -36,6 +36,11 @@ class OnlineMarketPlace {
     _offers.add(offer);
     notifySubscribers(
         EventType.newOffer, "New offer is added: ${offer.message}");
+  }
+
+  void addNewJobOpening(String jobTitle) {
+    notifySubscribers(
+        EventType.jobOpening, "New opening position is available: $jobTitle");
   }
 
   void notifySubscribers(EventType type, String message) {

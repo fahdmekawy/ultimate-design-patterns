@@ -1,6 +1,6 @@
 class Product {
-  String _name;
-  double _price;
+  final String _name;
+  final double _price;
 
   Product({required String name, required double price})
       : _name = name,

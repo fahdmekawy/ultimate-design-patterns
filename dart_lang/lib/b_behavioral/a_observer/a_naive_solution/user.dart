@@ -1,9 +1,10 @@
 import 'package:dart_lang/b_behavioral/a_observer/a_naive_solution/observer.dart';
 
 class User {
-  String _name;
-  bool _isSubscribedOnProducts;
-  bool _isSubscribedOnOffers;
+  final String _name;
+  final bool _isSubscribedOnProducts;
+  final bool _isSubscribedOnOffers;
+
   User(
       {required String name,
       required bool isSubscribedOnProducts,
@@ -13,7 +14,9 @@ class User {
         _isSubscribedOnOffers = isSubscribedOnOffers;
 
   String get name => _name;
+
   bool get isSubscribedOnProducts => _isSubscribedOnProducts;
+
   bool get isSubscribedOnOffers => _isSubscribedOnOffers;
 
   void notifyProduct(Product product) {

@@ -4,7 +4,7 @@ import 'package:dart_lang/b_behavioral/j_command/models/tv_model.dart';
 class TurnOnTv implements CommandInterface {
   final TvModel tv;
 
-  TurnOnTv(TvModel tvModel) : this.tv = tvModel;
+  TurnOnTv(TvModel tvModel) : tv = tvModel;
 
   @override
   void execute() {

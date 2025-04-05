@@ -1,9 +1,9 @@
 import 'package:dart_lang/b_behavioral/a_observer/a_naive_solution/observer.dart';
 
 class OnlineMarketPlace {
-  List<User> _users;
-  List<Product> _products;
-  List<Offer> _offers;
+  final List<User> _users;
+  final List<Product> _products;
+  final List<Offer> _offers;
 
   OnlineMarketPlace()
       : _users = [],

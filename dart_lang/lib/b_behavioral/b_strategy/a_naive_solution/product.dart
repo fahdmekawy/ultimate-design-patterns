@@ -9,6 +9,7 @@ class Product {
         _price = price;
 
   String get name => _name;
+
   double get price => _price;
 
   double calculatePrice(MembershipType membershipType) {

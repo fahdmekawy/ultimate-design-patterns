@@ -6,7 +6,7 @@ void main() {
   const Product product1 = Product(
       name: "Mobile", price: 1000, pricingStrategy: GoldPricingStrategy());
   const Product product2 = Product(
-      name: "Labtop", price: 10000, pricingStrategy: RegularPricingStrategy());
+      name: "Laptop", price: 10000, pricingStrategy: RegularPricingStrategy());
   const Product product3 = Product(
       name: "PC", price: 5000, pricingStrategy: PremiumPricingStrategy());
 

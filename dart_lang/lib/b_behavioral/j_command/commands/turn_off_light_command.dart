@@ -4,7 +4,7 @@ import 'package:dart_lang/b_behavioral/j_command/models/light_model.dart';
 class TurnOffLight implements CommandInterface {
   final LightModel light;
 
-  TurnOffLight(LightModel lightModel) : this.light = lightModel;
+  TurnOffLight(LightModel lightModel) : light = lightModel;
 
   @override
   void execute() {

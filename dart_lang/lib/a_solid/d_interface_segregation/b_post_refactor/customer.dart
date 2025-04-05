@@ -2,8 +2,8 @@ import 'package:dart_lang/a_solid/d_interface_segregation/b_post_refactor/subscr
 import 'package:dart_lang/a_solid/d_interface_segregation/b_post_refactor/user_manager.dart';
 
 class Customer implements UserManager, SubscriptionNotificationService {
-  String? _name;
-  String? _email;
+  final String? _name;
+   String? _email;
 
   Customer(String name) : _name = name;
 

@@ -1,6 +1,6 @@
 class Order {
-  String? _name;
-  double _price;
+  final String? _name;
+  final double _price;
 
   Order(String? name, double price)
       : _name = name,

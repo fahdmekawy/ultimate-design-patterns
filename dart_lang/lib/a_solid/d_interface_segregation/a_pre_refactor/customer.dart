@@ -1,7 +1,7 @@
 import 'package:dart_lang/a_solid/d_interface_segregation/a_pre_refactor/user_manager.dart';
 
 class Customer implements UserManager {
-  String? _name;
+  final String? _name;
   String? _email;
 
   Customer(String name) : _name = name;

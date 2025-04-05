@@ -1,5 +1,5 @@
 class Customer {
-  String? _name;
+  final String? _name;
   String? _email;
 
   Customer(String name) : _name = name;

@@ -1,5 +1,5 @@
 class Payment {
-  String? _type;
+ final String? _type;
 
   Payment(String type) : _type = type;
   String? get type => _type;
